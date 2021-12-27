@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>persistence-modules</artifactId>
+    <name>persistence-modules</name>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.baeldung</groupId>
+        <artifactId>parent-modules</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>activejdbc</module>
+        <module>hibernate-enterprise</module>
+        <module>influxdb</module>
+        <module>java-cassandra</module>
+        <module>java-cockroachdb</module>
+        <module>java-jdbi</module>
+        <module>spring-jooq</module>
+        <module>spring-mybatis</module>
+        <module>spring-persistence-simple</module>
+    </modules>
+
+    <properties>
+        <!-- persistence -->
+        <hibernate.version>5.2.17.Final</hibernate.version>
+
+        <postgresql.version>42.2.20</postgresql.version>
+    </properties>
+
+</project>
